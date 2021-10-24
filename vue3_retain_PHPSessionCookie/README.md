@@ -171,7 +171,7 @@ module.exports = {
 
 &nbsp;  
  
-same idea for [angular2](https://github.com/pipiscrew/angular2_small_prjs/tree/master/angular8_simplified_retain_PHPSessionCookie)  
+same idea for [angular8](https://github.com/pipiscrew/angular2_small_prjs/tree/master/angular8_simplified_retain_PHPSessionCookie)  
 
 &nbsp;  
 
