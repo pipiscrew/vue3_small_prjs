@@ -58,7 +58,48 @@ attention when you adjusting the **.env files** most possible is when you going 
 
 the **workaround** is to close the DOS window, reopen it, re execute the same command, no erorrs will appear.
 
-the **permanent fix** is to use `vue-cli-service build --mode production`
+the **permanent fix** is to use `vue-cli-service build --mode production`  
+
+&nbsp;  
+
+-----  
+
+&nbsp;  
+
+# PHP Session expiration setup
+
+The configuration primarly should be done on php.ini, we can use `ini_set` function to set it on runtime.
+
+```php
+<?php
+
+//prior v7
+//https://stackoverflow.com/a/24350918/1320686
+ini_set('session.cookie_lifetime', 86400);
+ini_set('session.gc_maxlifetime', 86400);
+
+sesion_start(); //https://www.php.net/manual/en/function.session-start.php
+
+
+//v7 and later
+//https://stackoverflow.com/a/53485125/1320686
+session_start([
+    'cookie_lifetime' => 86400,
+    'gc_maxlifetime' => 86400
+]);
+```
+
+&nbsp;  
+86400 = represents 24h, value is in seconds.  
+&nbsp;  
+[session.cookie_lifetime](https://www.php.net/manual/en/session.configuration.php#ini.session.cookie-lifetime) specifies the lifetime of the cookie in seconds which is sent to the browser.  
+
+&nbsp;  
+[session.gc_maxlifetime](https://www.php.net/manual/en/session.configuration.php#ini.session.gc-maxlifetime) specifies the number of seconds after which data will be seen as 'garbage' and potentially cleaned up. Garbage collection may occur during session start  
+
+&nbsp;  
+
+-----  
 
 &nbsp;  
 
@@ -88,6 +129,10 @@ PROD compilation (`dist` folder) - 324kb
 ### new to vue ?  
 * [John Papa – Getting Started](http://pluralsight.pxf.io/1Qrod)  
 * [John Papa – Fundamentals and Best Practices](https://www.youtube.com/watch?v=KkbcoUrHBZw)  
+
+&nbsp;  
+ 
+same idea for [angular8](https://github.com/pipiscrew/angular2_small_prjs/tree/master/angular8_simplified_retain_PHPSessionCookie)  
 
 &nbsp;  
 
@@ -182,11 +227,7 @@ module.exports = {
     "$": true,
     "jQuery": true
   },
-```
-
-&nbsp;  
- 
-same idea for [angular8](https://github.com/pipiscrew/angular2_small_prjs/tree/master/angular8_simplified_retain_PHPSessionCookie)  
+```  
 
 &nbsp;  
 
