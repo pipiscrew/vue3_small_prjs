@@ -4,6 +4,7 @@
 //productionSourceMap false= disable source map files on PROD build
 module.exports = {
   productionSourceMap: false, 
+  publicPath: process.env.VUE_APP_BASE_URL,
   devServer: {
     proxy: {
       '^/api': {

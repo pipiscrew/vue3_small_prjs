@@ -24,7 +24,7 @@ Of course this validation has to be carried to all PHP project files.
 
 ## instructions
 -----  
-
+### proxy  
 for development purposes, to have simultaneously the 
 * Node development server
 * Apache  
@@ -44,6 +44,21 @@ module.exports = {
 with this configuration if Vue asks `'api/auth.php'`, will go to `http://localhost:80/api/auth.php`.  
 
 **Not working** with PHP debug server `php.exe -S localhost:80 -t ../htdocs/` needs apache / nginx, the latter is not tested.  
+
+&nbsp;  
+### deploy to real server, sub folder  
+Most of the times, on server, uploading the compiled project to a **subfolder**. This subfolder has to be declared to `.env.production`, underneath this variable used at :
+* router.js - `base: process.env.VUE_APP_BASE_URL`  
+* vue.config.js - `publicPath: process.env.VUE_APP_BASE_URL`
+
+attention when you adjusting the **.env files** most possible is when you going for **build** or **serve**, you end up with an error :  
+```js
+\router.js - 30:9  error  'process' is not defined  no-undef
+```
+
+the **workaround** is to close the DOS window, reopen it, re execute the same command, no erorrs will appear.
+
+the **permanent fix** is to use `vue-cli-service build --mode production`
 
 &nbsp;  
 
@@ -153,7 +168,7 @@ npm uninstall vue-loading-overlay
 //tsconfig.json (not required)
 https://vuejs.github.io/vetur/guide/setup.html#project-setup
 
-//.eslintrc.js (not required, I think after that the server is going faster)
+//.eslintrc.js (not required, I think after that the serve is going faster)
 https://dev.to/ferasdawod/setting-up-eslint-for-a-vuejs-project-using-vs-code-i54
 
 //if you like to load a local js file, sits on assets folder
