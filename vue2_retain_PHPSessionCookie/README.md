@@ -1,4 +1,4 @@
-# Vue 3 with PHP API
+# Vue 2 with PHP API
 
 This repo comes to give the ability to have PHP language as API. The logic is, once user **logged in**, at server side, API sets a `$_SESSION` variable  
 
