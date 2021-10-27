@@ -4,7 +4,7 @@ Basically is a replica of [Vue 2 with PHP API](https://github.com/pipiscrew/vue3
 
 
 
-main ingregrient is [httpVueLoader](https://github.com/FranckFreiburger/http-vue-loader) (10.6kb). allowing us to load vue files.   
+main ingredient is [httpVueLoader](https://github.com/FranckFreiburger/http-vue-loader) (10.6kb). allowing us to load vue files.   
 
 **general.js** - contains common functions  
 
