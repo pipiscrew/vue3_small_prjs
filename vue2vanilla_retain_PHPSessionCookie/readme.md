@@ -20,6 +20,8 @@ https://user-images.githubusercontent.com/3852762/139077011-69cac6f1-8423-4b00-b
 
 &nbsp;  
 
+ref - [Dead simple Vue.js router example](https://www.blackspotradish.com/wp/2019/08/dead-simple-vue-js-router-example/)  
+
 #vue2 #vanilla #barebones #php #api #login  
 
 &nbsp;  
