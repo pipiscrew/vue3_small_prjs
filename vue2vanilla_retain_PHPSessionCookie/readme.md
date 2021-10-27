@@ -12,6 +12,14 @@ main ingregrient is [httpVueLoader](https://github.com/FranckFreiburger/http-vue
 
 &nbsp;  
 
+
+
+https://user-images.githubusercontent.com/3852762/139077011-69cac6f1-8423-4b00-bce2-fc632cdab102.mp4
+
+
+
+&nbsp;  
+
 #vue2 #vanilla #barebones #php #api #login  
 
 &nbsp;  
