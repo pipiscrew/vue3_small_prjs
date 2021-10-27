@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="bootstrap.min.css">
+
+<script src="vue.js"></script>
+<script src="httpVueLoader.js"></script>
+<script src="vue-router.js"></script>
+
+<script src="general.js"></script> 
+<script src="router.js"></script>
+
+<div id="app">
+    <router-view />
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        router: router
+    });
+</script>
