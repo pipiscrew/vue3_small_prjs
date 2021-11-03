@@ -134,6 +134,8 @@ PROD compilation (`dist` folder) - 324kb
  
 same idea for [angular8](https://github.com/pipiscrew/angular2_small_prjs/tree/master/angular8_simplified_retain_PHPSessionCookie)  
 
+same idea by [Nicolas Tinte](https://medium.com/neocoast/vue-protect-your-routes-from-intruders-2b77b0d10571)  
+
 &nbsp;  
 
 -----  
