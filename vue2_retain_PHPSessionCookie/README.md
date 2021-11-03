@@ -227,7 +227,12 @@ module.exports = {
     "$": true,
     "jQuery": true
   },
+
+//typescript support with vueCLI support vue v2.x - choose the "Manually select features" option
+vue create my-project-name
+https://vuejs.org/v2/guide/typescript.html
 ```  
+
 
 &nbsp;  
 
