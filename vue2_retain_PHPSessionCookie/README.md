@@ -187,6 +187,7 @@ http://localhost:8080/
 //install dependencies
 npm install bootstrap
 npm install vue-router
+vue add vuetify
 
 //build for PROD
 npm run build
