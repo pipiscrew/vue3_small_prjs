@@ -239,6 +239,7 @@ https://vuejs.org/v2/guide/typescript.html
  
 
 ~~ fac3b00k.yarn ~~
+--https://stackshare.io/stackups/babel-vs-yarn
 npm install --global yarn
 
 --avoid 'Found incompatible module'
