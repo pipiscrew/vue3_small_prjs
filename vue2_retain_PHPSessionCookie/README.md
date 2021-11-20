@@ -234,8 +234,28 @@ module.exports = {
 //typescript support with vueCLI support vue v2.x - choose the "Manually select features" option
 vue create my-project-name
 https://vuejs.org/v2/guide/typescript.html
-```  
+ 
 
+ 
+
+~~ fac3b00k.yarn ~~
+npm install --global yarn
+
+--avoid 'Found incompatible module'
+yarn config set ignore-engines true
+
+--yarn evolved
+vue add vuetify
+yarn add vue-router
+
+--serve
+yarn serve
+
+--build 
+--https://roots.io/docs/sage/9.x/compiling-assets/#available-build-commands
+yarn build
+
+``` 
 
 &nbsp;  
 
