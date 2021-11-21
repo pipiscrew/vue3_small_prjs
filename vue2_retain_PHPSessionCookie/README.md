@@ -221,6 +221,8 @@ https://dev.to/ferasdawod/setting-up-eslint-for-a-vuejs-project-using-vs-code-i5
 
 //if you like to load a local js file, sits on assets folder
 import BootstrapTable from '../assets/bootstrap-table-vue.min.js';
+//must include as - https://vuejs.github.io/vetur/guide/setup.html#project-setup
+
 
 //(not recommended) if for any reason you like to include jQuery (not recommended)
 -use the casual HTML way with <script> tag at public\index.html
