@@ -29,7 +29,7 @@ call :Trim dtStamp %dtStamp%
 ::----------------
  
 ::
-RAR.exe a -x*\bin -x*\obj -x*\packages -x*\node_modules -x*.rar -x*.zip -x*.7z -x*.exe -ep1 "%destination_folder%%dtStamp%.rar" -s "%1"
+RAR.exe a -x*\bin -x*\obj -x*\packages -x*\node_modules -x*\dist -x*.rar -x*.zip -x*.7z -x*.exe -ep1 "%destination_folder%%dtStamp%.rar" -s "%1"
 RAR.exe a -x*\bin -x*\obj -x*\packages -x*\node_modules -x*\JSONsamples -x*.rar -x*.zip -x*.7z -x*.exe -x*.png -x*.svg -ep1 "%destination_folder%%dtStamp%api.rar" -s "%~dp0api"
 
 ::dbase schema only
