@@ -76,21 +76,15 @@ VUE_APP_BASE_URL=/
 VUE_APP_ROOT_API=http://localhost:8080/
 
 //FOR PROD (.env.production)
-VUE_APP_BASE_URL=/vas/
-VUE_APP_ROOT_API=http://domain.com/vas/
+VUE_APP_BASE_URL=/test/
+VUE_APP_ROOT_API=http://domain.com/test/
 ```
 
 the above configuration instract :  
 * when **debug** to use the **htdocs** (proxy to localhost will continue work)   
-* when **PROD** to use folder **vas**  
+* when **PROD** to use folder **test**  
 
-then on Vue files all **API calls** should be adjusted from  
-
-```ts
-GetData("/api/xxxxAPI.php", formData);
-```
-
-to 
+then on Vue files the **API calls** should be adjusted as
 
 ```ts
 GetData(process.env.VUE_APP_ROOT_API + "api/xxxxAPI.php", formData);
