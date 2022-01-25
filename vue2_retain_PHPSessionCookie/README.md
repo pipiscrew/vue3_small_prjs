@@ -61,6 +61,44 @@ the **workaround** is to close the DOS window, reopen it, re execute the same co
 the **permanent fix** is to use `vue-cli-service build --mode production`  
 
 &nbsp;  
+### use sub folder for API
+
+The solution is to **hardcode** the host, on the following files,  
+
+`.env`  
+`.env.production`  
+
+should add the a new **key** example `VUE_APP_ROOT_API`  
+
+```ts
+//FOR DEBUG (.env)
+VUE_APP_BASE_URL=/
+VUE_APP_ROOT_API=http://localhost:8080/
+
+//FOR PROD (.env.production)
+VUE_APP_BASE_URL=/vas/
+VUE_APP_ROOT_API=http://domain.com/vas/
+```
+
+the above configuration instract :  
+* when **debug** to use the **htdocs** (proxy to localhost will continue work)   
+* when **PROD** to use folder **vas**  
+
+then on Vue files all **API calls** should be adjusted from  
+
+```ts
+GetData("/api/xxxxAPI.php", formData);
+```
+
+to 
+
+```ts
+GetData(process.env.VUE_APP_ROOT_API + "api/xxxxAPI.php", formData);
+```
+
+
+
+&nbsp; 
 
 -----  
 
