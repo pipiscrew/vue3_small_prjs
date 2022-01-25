@@ -27,4 +27,6 @@ Additionally there is a batch file `backup folder_with_date_stamp.bat` when the 
   
 &nbsp;  
 &nbsp;  
-ps : User has to modify the batch file `backup folder_with_date_stamp.bat` at lines 18 / 34 / 35.
+ps : User has to modify the batch file `backup folder_with_date_stamp.bat` at lines 18 / 34 / 35.  
+ps2 : when saying VSCode means [VSCodium](https://github.com/VSCodium/vscodium)  
+ps3 : `.vscode` folder must be on `htdocs`, omitted by screenshots
