@@ -56,9 +56,11 @@ attention when you adjusting the **.env files** most possible is when you going 
 \router.js - 30:9  error  'process' is not defined  no-undef
 ```
 
-the **workaround** is to close the DOS window, reopen it, re execute the same command, no erorrs will appear.
+the **workaround** is to close the DOS window, reopen it, re execute the same command, no errors will appear.
 
 the **permanent fix** is to use `vue-cli-service build --mode production`  
+
+In a **Vue** application using `Vite`, setting the `base` property in the **vite.config.js** file to an empty string (`base: ''`) allows the application to be served from root OR any subfolder on a web server.  
 
 &nbsp;  
 ### use sub folder for API
